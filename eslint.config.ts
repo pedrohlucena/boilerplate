@@ -16,7 +16,12 @@ export default defineConfig([
     ], 
     languageOptions: { 
       globals: globals.node
-    } 
+    }
   },
-  tseslint.configs.recommended
+  tseslint.configs.recommended,
+  {
+    rules: {
+      quotes: ["error", "double"]
+    }
+  }
 ]);
